@@ -13,7 +13,7 @@ public class GildedRose {
 	 */
 	public static void main(String[] args) {
 		
-        System.out.println("OMGHAI!");
+        // System.out.println("OMGHAI!");
 		
         items = new ArrayList<Item>();
         items.add(new Item("+5 Dexterity Vest", 10, 20));
@@ -23,7 +23,7 @@ public class GildedRose {
         items.add(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
         items.add(new Item("Conjured Mana Cake", 3, 6));
 
-        updateQuality();
+        //updateQuality();
 }
 
 
@@ -104,4 +104,22 @@ public class GildedRose {
         }
     }
 
+    //constructor
+    public GildedRose() {
+    	items = new ArrayList<Item>();
+    }
+    
+    //getter
+    public List<Item> getItems() {
+    	return items;
+    }
+    //setter
+    public void setItem(Item item) {
+    	items.add(item);
+    }
+    
+    //update one day
+    public void oneDay() {
+    	updateQuality();
+    }
 }
